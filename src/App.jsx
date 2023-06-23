@@ -7,7 +7,7 @@ import { publicRoutes } from '~/routers';
 
 function App() {
     return (
-        <div className="w-[1536px] min-h-screen ">
+        <div className="">
             <>
                 <Router>
                     <Routes>

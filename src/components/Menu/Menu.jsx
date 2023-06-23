@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function Menu({ children }) {
-    return <nav>{children}</nav>;
+    return <nav className="flex h-full items-center">{children}</nav>;
 }
 
 Menu.propTypes = {

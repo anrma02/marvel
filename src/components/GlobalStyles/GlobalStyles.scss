@@ -19,7 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
-
+    font-family: 'RobotoCondensed Bold', 'Trebuchet MS', ' Helvetica', ' Arial', 'sans-serif';
     overflow-y: overlay;
 }
 
@@ -37,6 +37,11 @@ html *::-webkit-scrollbar-thumb {
 html *::-webkit-scrollbar-track {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0);
+}
+
+ul,
+li {
+    text-decoration: none;
 }
 
 button,

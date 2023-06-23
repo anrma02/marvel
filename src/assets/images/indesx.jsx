@@ -1,5 +1,11 @@
-const images = {
-    // eslint-disable-next-line no-undef
-    logo: require('~/assets/images/logo.svg').default,
+import logo from '~/assets/images/logo.svg';
+
+const images = () => {
+    return (
+        <>
+            logo: <img src={logo.default} alt="Logo" />,
+        </>
+    );
 };
+
 export default images;

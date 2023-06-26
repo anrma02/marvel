@@ -2,7 +2,7 @@ import Menu from '~/components/Menu/Menu';
 import { MenuItem } from '~/components/Menu';
 import { Link } from 'react-router-dom';
 import config from '~/config';
-import SearchValue from '../Search/Search';
+import SearchValue from '../Search/SearchValue';
 
 function Header() {
     const currentUser = true;

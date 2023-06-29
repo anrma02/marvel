@@ -1,12 +1,15 @@
 /* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-function ListItem({ name, thumbnail }) {
+function ListItem({ name, id }) {
     return (
-        <ul>
-            <li className="text-black p-2">{name}</li>
-        </ul>
+        <Link to={`/comics/issue/${id}`}>
+            <ul>
+                <li className="text-black p-2 cursor-pointer">{name}</li>
+            </ul>
+        </Link>
     );
 }
 

@@ -10,9 +10,9 @@ const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
 export const searchCharactersService = async function (debounceValue) {
     try {
         const res = await axios.get(
-            `https://gateway.marvel.com/v1/public/characters?apikey=${publicKey}&ts=${ts}&hash=${hash}&nameStartsWith=${encodeURIComponent(
+            `https://gateway.marvel.com/v1/public/comics?apikey=${publicKey}&ts=${ts}&hash=${hash}&titleStartsWith=${encodeURIComponent(
                 debounceValue,
-            )}`,
+            )} `,
         );
         return res;
     } catch (error) {
@@ -31,5 +31,18 @@ export const searchComicsService = async function (debounceValue) {
     } catch (error) {
         console.log(error);
         throw error;
+    }
+};
+
+export const comicsByIdService = async function (id) {
+    try {
+        const res = await axios.get(
+            `https://gateway.marvel.com:443/v1/public/comics/${id}?apikey=${publicKey}&ts=${ts}&hash=${hash}`,
+        );
+        return res;
+    } catch (e) {
+        console.log('🚀 ~ file: httpRequest.jsx:47 ~ comicsByIdService ~ e:', e);
+
+        throw e;
     }
 };

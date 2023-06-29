@@ -1,3 +1,4 @@
+import Comics from '~/pages/Comics/Comics';
 import config from '../config';
 
 // Layouts
@@ -9,8 +10,9 @@ import Search from '../pages/Search';
 // Public routes
 
 const publicRoutes = [
-     { path: config.routes.home, component: Home },
-     { path: config.routes.search, component: Search },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.search, component: Search },
+    { path: config.routes.comics, component: Comics },
 ];
 
 const privateRoutes = [];

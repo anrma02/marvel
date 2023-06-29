@@ -1,6 +1,7 @@
 const routes = {
-     home: '/',
-     search: '/search',
+    home: '/',
+    search: '/search',
+    comics: '/comics/issue/:id',
 };
 
 export default routes;

@@ -2,8 +2,7 @@ import Menu from '~/components/Menu/Menu';
 import { MenuItem } from '~/components/Menu';
 import { Link } from 'react-router-dom';
 import config from '~/config';
-import SearchValue from '../Search/SearchValue';
-// import { SearchProvider } from '~/Context/SearchProvider';
+import SearchValue from '../SearchValue/SearchValue';
 
 function Header() {
     const currentUser = true;
@@ -43,7 +42,7 @@ function Header() {
                     </Link>
                     {/*  */}
                     <div>
-                            <SearchValue />
+                        <SearchValue />
                     </div>
                     {/*  */}
                 </div>
